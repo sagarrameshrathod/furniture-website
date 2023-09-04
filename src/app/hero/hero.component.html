@@ -1,0 +1,27 @@
+<div class="hero">
+  <div class="hero-inner">
+    <div class="hero-left">
+      <div class="hero-left-top">
+        <h3>NEW ARRIVALS</h3>
+        <div class="name">
+          <h1>Form Milkyway</h1>
+          <h1>Ivory Chair</h1> 
+        </div>
+        <button class="button button-shop-now">SHOP NOW</button>
+      </div>
+      <div class="hero-left-bottom">
+        <img src="../../assets/facebook.png" alt="facebook" class="social-media">
+        <img src="../../assets/instagram.png" alt="instagram" class="social-media">
+        <img src="../../assets/path.png" alt="pinterest" class="social-media">
+      </div> 
+    </div>
+    <div class="hero-right">
+      <div class="hero-img">
+        <img src={{imgUrl}} alt="sofa" class="hero-sofa-img">
+      </div>
+      <div class="sofa-img" >
+            <a *ngFor="let number of num;let i=index" (click)="imgChange(i)">0{{number.id}}</a>
+        </div>
+    </div>
+  </div>
+</div>

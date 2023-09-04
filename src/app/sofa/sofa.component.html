@@ -1,0 +1,45 @@
+<div class="sofa">
+    <div class="sofa-section">
+        <div class="sofa-section-one">
+            <h1>Sofa Carnabi Set</h1>
+            <p class="desktop-p">Lorem ipsum dolor sit amet, consetetur sadipscing elitr,
+                 sed diam nonumy eirmod voluptua. At vero eos et accusam et justo duo dolores.</p>
+            <p class="phone-p">Lorem ipsum dolor sit amet,</p>     
+            <h3>- {{price}} $</h3>  
+            <div class="sofa-color">
+                <p class="sofa-color-button first" (click)="orange(0)"></p>
+                <p class="sofa-color-button mid" (click)="blue(1)"></p>
+                <p class="sofa-color-button last" (click)="red(2)"></p>
+            </div>   
+            <div class="view">
+                <button type="button" class="button button-add-cart">ADD TO CART</button>
+                <a>Vew All Products</a>
+            </div>
+        </div>
+        <div class="sofa-section-two">
+            <div class="num">
+                <div class="num-img">
+                    <p>01</p>
+                    <hr>
+                    <p>06</p>
+                </div>
+            </div>
+            <div class="sofa-slide">
+                <div class="slid">
+                    <img src="{{sofaImg}}" alt="sofa" class="sofa-image">
+                </div>
+                <div class="slid">
+                    <img src="../../assets/blue-sofa.png" alt="sofa" class="sofa-image">
+                </div>
+                <div class="slid">
+                    <img src="../../assets/red-sofa.png" alt="sofa" class="sofa-image">
+                </div>
+            </div>
+            <div class="arrow-mark">
+                <img src="../../assets/arrow.png" alt="arrow" class="left-arrow" id="prev">
+                |
+                <img src="../../assets/arrow.png" alt="arrow" class="right-arrow" id="next">
+            </div>
+        </div>
+    </div>
+</div>

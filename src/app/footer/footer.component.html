@@ -1,0 +1,44 @@
+<footer class="footer">
+    <div class="footer-section">
+        <div class=" section section-about">
+            <div class="logo">
+                <img src="../../assets/Logo.svg" alt="logo">
+            </div>
+            <div class="about">
+                <p>T3118 Doctors Drive,Los Angeles, California 90017 </p>
+                <p>Customer Support: 01928402101 </p>
+                <p>Email: support@maynooth.com</p>
+            </div>
+            <div class="media">
+                <img src="../../assets/facebook.png" alt="facebook">
+                <img src="../../assets/instagram.png" alt="instagram">
+                <img src="../../assets/path.png" alt="pinterest">
+            </div>
+        </div>
+        <div class=" section section-info">
+            <div class="info-header">
+                <h3>Information</h3>
+            </div>
+            <div class="info-desc">
+                <p *ngFor="let f of info">{{f.name}}</p>
+            </div>
+        </div>
+        <div class=" section section-element">
+            <div class="element-header">
+                <h3>Element</h3>
+            </div>
+            <div class="element-desc">
+                <p *ngFor="let e of help">{{e.name}}</p>
+            </div>
+        </div>
+        <div class=" section section-help">
+            <div class="help-header">
+                <h3>Help</h3>
+            </div>
+            <div class="help-desc">
+                <p *ngFor="let h of help">{{h.name}}</p>
+            </div>
+        </div>
+    </div>
+    <p class="capy-right">COPYRIGHT &copy; 2023 MAYNOOTH, ALL RIGHTS RESERVED</p>
+</footer>

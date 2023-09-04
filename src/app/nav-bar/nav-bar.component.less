@@ -1,0 +1,117 @@
+.navBar-max{
+    max-width: 1366px;
+    margin: 0 auto;
+}
+
+.nav-bar{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 13.8vh;
+    position: relative;
+    .menu{
+        display: none;
+    }
+
+    @media (max-width: 767px) {
+        .nav-center{
+            position: absolute;
+            top: 95px;
+            left: 0;
+            width: 100%;
+            background-color: var(--bg-color);
+            ul{
+                display: flex;
+                flex-direction: column;
+                padding: 10px 10px 30px 30px;
+                row-gap: 40px;
+                li{
+                    font-weight: 700;
+                }
+            }
+            display: none;
+        }
+
+        .menu{
+            display: block;
+        }
+
+        .nav-img{
+            width: 15px;
+            height: 15px;
+        }
+
+        .nav-logo{
+            max-width: 110px;
+            max-height: 110px;
+        }
+    }
+
+    
+    .ul-list{
+        display: flex;
+        column-gap: 50px;
+        .nav-list{
+            list-style: none;
+            cursor: pointer;
+            color: var(--font-color);
+            &:hover{
+                color: #000;
+            }
+        }
+    }
+
+    .nav-right{
+        .nav-img:hover{
+            filter: invert(70%);
+        }
+    
+        .nav-cart{
+            margin: 0px 30px;
+        }
+    
+        img{
+            cursor: pointer;
+        }
+        @media (max-width:768px) {
+            .nav-search{
+                display: none;
+            }
+        }
+    }
+}
+
+.popup{
+    display: flex;
+    justify-content: space-between;
+    padding: 40px;
+    position: absolute;
+    top: 13.8vh;
+    left: 35vw;
+    background-color: var(--bg-color);
+    border-radius: 5px;
+    z-index: 1;
+    
+    .categories, .featured{
+        font-size: 15px;
+        margin-top: 10px;
+        color: var(--font-color);
+        &:hover{
+            color: #000;
+            cursor: pointer;
+        }
+    }
+
+    .popup-content{
+        padding: 15px;
+    }
+
+    @media (max-width: 767px) {
+        flex-direction: column;
+        row-gap: 30px;
+        width: 100%;
+        height: auto;
+        left: 0;
+    }
+}
+

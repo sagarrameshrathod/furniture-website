@@ -1,0 +1,33 @@
+<div class="navBar-max">
+    <div class="nav-bar">
+        <div class="menu">
+            <img src="../../assets/menu.png" alt="menu" (click)="popup()">
+        </div>
+        <div class="nav nav-left">
+            <img src="../../assets/Logo.svg" alt="logo" class="nav-logo">
+        </div>
+        <div class="nav nav-center">
+            <ul class="ul-list">
+                <li class="nav-list" (click)="popup()">Our Offer</li>
+                <li class="nav-list" (click)="popup()">Bedroom</li>
+                <li class="nav-list" (click)="popup()">Kitchen & Dining</li>
+            </ul>
+        </div>
+        <div class="nav nav-right">
+            <img src="../../assets/search.png" alt="search" class="nav-img nav-search">
+            <img src="../../assets/cart.svg" alt="cart" class="nav-img nav-cart">
+            <img src="../../assets/profile.svg" alt="profile" class="nav-img nav-profile">
+        </div>
+    </div>
+    
+    <div class="popup" id="popup" *ngIf="pop==true">
+        <div class="popup-content content-categories">
+            <h3>Categories</h3>
+            <p *ngFor="let cat of categories" class="categories">{{cat.name}}</p>
+        </div>
+        <div class="popup-content content-featured">
+            <h3>Featured</h3>
+            <p *ngFor="let feat of featured" class="featured">{{feat.name}}</p>
+        </div>
+    </div>
+</div>

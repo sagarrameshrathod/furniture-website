@@ -1,0 +1,100 @@
+.newIn{
+    text-align: center;
+    margin-top: 15vh;
+    margin-bottom: 9vh;
+    p{
+        margin-top:24px;
+    }
+
+    @media (max-width: 767px) {
+        margin: 40px 0;
+        p{
+            margin-top: 9px;
+            font-size: 12px;
+        }
+    }
+}
+
+.photo{
+    position: relative;
+    margin-bottom: 150px;
+    margin-top: 230px;
+    .group-95
+    {
+        position: absolute;
+    }
+
+    .offer{
+        display: none;
+    }
+
+    .desktop-img{
+        width: 100%;
+    }
+
+    @media (max-width: 767px) {
+        margin: 50px 0;
+        background-image: url(.././assets/Australian-Made-Sofa-2.png);
+        width: 100%;
+        height: 227px;
+
+        .desktop-img{
+            display: none;
+        }
+
+        .offer{
+            display: block;
+        }
+
+        .offer{
+            width: 100%;
+            background-color: rgba(255, 255, 255, .2);
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            position: absolute;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .offer-section{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            font-size: 13px;
+
+            .offer-info{
+                max-width: 262px;
+            }
+
+            .subscribe{
+                margin-top: 27px;
+                margin-bottom: 55px;
+                .email-input{
+                    padding: 10px 40px 10px 20px;
+                    max-width: 285px;
+                    border-radius: 100px;
+                    border: 1px solid #2a2a2a;
+                    // background: transparent;
+                    background: rgba(255, 255, 255, .2);
+                    
+                }
+                *::placeholder{
+                    color: #000;
+                }
+
+                .button-subscribe{
+                    background-color: var(--color);
+                    color: var(--bg-color);
+                    border: none;
+                    padding: 11px 20px;
+                    border-radius: 100px;
+                    margin-left: -40px;
+                }
+            }
+        }
+    }
+}

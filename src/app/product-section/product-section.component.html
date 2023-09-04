@@ -1,0 +1,63 @@
+<div class="product-link" >
+    <a class="nav-link" *ngFor="let l of navBar">{{l.name}} <hr></a>
+</div>
+<div class="center">
+    <div class="product-filter">
+        <div class="menuFilter">
+            <div class="filterMenu">
+                <img src="../../assets/filter.png" alt="filter">
+            </div>
+        </div>
+        <div class="filters">
+            <div class="filter filter-color">
+                <h3>Colors</h3>
+                <div class="radio-color" >
+                    <input type="radio" name="radio" id="radio" *ngFor="let c of color" class="choose-color">
+                </div>
+            </div>    
+            <div class="filter filter-filter">
+                <h3>Filter</h3>
+            </div>
+            <div class="filter filter-material">
+                <h3>Materials</h3>
+                <div *ngFor="let m of material" class="metaterls">
+                    <label class="material-lable" for="metal">{{m.name}}</label>
+                    <input type="checkbox" class="checkbox">
+                </div>
+            </div>
+            <div class="filter filter-price">
+                <h3>Price</h3>
+                <input type="range" name="price" id="price"class="price-range" min="150$" max="1500$" list="values">
+                <datalist id="values">
+                    <option value="0" label="0$"></option>
+                    <option value="35" label="150$"></option>
+                    <option value="100" label="1500$"></option>
+                </datalist>
+            </div>
+            <div class="filter filter-new">
+                <h3>New In</h3>
+            </div>
+            <div class="filter filter-sale">
+                <h3>Sale Off</h3>
+            </div>
+        </div>
+        <div class="products">
+            <div class="box" *ngFor="let p of product">
+                <div class="box-inner">
+                    <span class="info">{{p.new}}</span>
+                    <img src="{{p.img}}" alt="product-img" class="box-img">
+                    <div class="view">
+                        <div class="view-inner view-space"><img src="../../assets/like.png" alt="like"></div>
+                        <div class="view-inner view-space"><img src="../../assets/cart.svg" alt="cart"></div>
+                        <div class="view-inner"><img src="../../assets/eye-open.png" alt="view"></div>
+                    </div>
+                </div>
+                <p>{{p.name}}</p>
+                <h4>{{p.price}}$</h4>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="btn-load">
+    <button class="button button-load-more">LOAD MORE</button>
+</div>
